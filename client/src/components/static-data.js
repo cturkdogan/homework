@@ -64,9 +64,11 @@ export const state = {
       text: "Secure data sharing and collaboration among partners => Blockchain corruption cyber attack Decarbonization => emission reduction goals, carbon neutral fuels, optimized logistic chains Safe seafare => Shipping 4.0  autonomous shipping, human error New business models: blockchain => verticals feeding on shipping data",
       parent_id: null,
       children: [{
+        menuId: "1.1",
         label: "Menu 1.1",      
         value: "1.1",        
-        title: txtgen.sentence()
+        title: txtgen.sentence(),
+        parent_id: "1"
       },]
     }
     return menu;
@@ -81,10 +83,11 @@ export const state = {
       text: "",
       parent_id: null,
       children: [{
+        menuId: "1.1",
         label: "Menu 1.1",      
         value: txtgen.sentence(),
-        title: txtgen.sentence()
-        
+        title: txtgen.sentence(),
+        parent_id: "1"       
       },]
     },
     {
@@ -95,9 +98,11 @@ export const state = {
       text: txtgen.sentence(),
       parent_id: null,
       children: [{
+        menuId: "2.1",
         label: "Menu 2.1",      
         value: txtgen.sentence(),        
-        title: txtgen.sentence()
+        title: txtgen.sentence(),
+        parent_id: "1"
       },]
     }    
   ];
