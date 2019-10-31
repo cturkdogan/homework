@@ -1,0 +1,238 @@
+.App {
+  height: 100vh;
+  display: flex;
+  color: rgba(189, 189, 192, 1);
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+#root {
+  height: 100vh;
+  font: "Nunito Sans", sans-serif;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#sidebar{
+  height: 100vh;
+  border-right: 1px solid rgba(32, 32, 35, 1);
+  transition: width 0.3s;
+  text-align: left;
+  background-color:white;
+  overflow-y: none;
+  flex-direction: column;
+  color: black;
+  cursor: pointer;
+  z-index: 2000;
+
+}
+
+.textarea {
+  display: block;  
+  width: 60rem;
+  height: 80rem;
+}
+
+.MenuWindow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Header {
+  display: flex;
+  border: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(189, 189, 192, 0.2);
+  max-height: 5rem;
+  color: black;
+  font-size: 14px;;
+}
+.Header__name {
+  color: black;
+  font-size: 2rem;
+}
+
+.Text {
+  flex: 1 1 0;
+  display: flex;
+  padding: 2rem 4rem 0 4rem;
+  flex-direction: column;
+  align-items: flex-start;  
+  margin: 0 auto;
+  overflow-y: scroll;
+  color: black;
+}
+
+.inputText {
+  flex: 1 1 0;
+  display: flex;
+  padding: 2rem 4rem 0 4rem;
+  flex-direction: row; 
+  overflow-y: scroll;
+  overflow-x: scroll;
+  color: black;
+}
+
+.button {
+  position: relative;
+  display:inline-block;
+  border-radius: 50%;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.footer {
+  border: 1px solid rgba(2, 2, 26, 0.2);
+  margin: 1rem 0;
+  color: black;
+  padding: 1rem;
+  background: linear-gradient(90deg, #c5d6e4, #d5dee9);
+  max-height: 4rem;
+}
+
+#main{
+  flex: 1 1 0;  
+  background-color: white;
+  height: 100vh;
+}
+
+#content {
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+img {
+  border-radius: 50%;
+  display: flex; 
+}
+
+.media {
+  border: 1px solid gray;
+  display: flex;  
+}
+
+.media:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.media-body {
+  display: none;
+}
+
+/* not small devices  */
+@media (min-width: 576px) {
+  .media-body {
+    display: block;
+    padding: 0 0 0 1rem;
+  }
+  .media-body .name {
+    display: block;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
+}
+
+#header {
+  background: white;
+  color: black;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(189, 189, 192, 0.2);
+}
+
+#Chats {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 80vh;
+}
+.Chat {
+  margin: 1rem 0;
+  color: #fff;
+  padding: 1rem;
+  background: linear-gradient(90deg, #1986d8, #7b9cc2);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.Chat.is-user-msg {
+  margin-left: auto;  
+  background: #2b2c33;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (min-width: 576px) {
+  .Chat {
+    max-width: 60%;
+  }
+}
+
+.just-padding {
+  padding: 15px;
+}
+
+.list-group.list-group-root {
+  padding: 0;
+  overflow: hidden;
+}
+
+.list-group.list-group-root .list-group {
+  margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+  border-top-width: 0;
+}
+
+.list-group.list-group-root > .list-group > .list-group-item {
+  padding-left: 30px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group-item {
+  padding-left: 45px;
+}
