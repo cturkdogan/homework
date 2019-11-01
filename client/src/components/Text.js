@@ -9,10 +9,10 @@ import ReactMarkDown from 'react-markdown';
 
 function Text({ menu }) {
   const state = store.getState();
-  const { value, menuId } = menu;
+  const { value, menu_id } = menu;
   // const markValue = textToReactMarkup(value);
   console.log(`Menu: ${menu}`);
-  const activeMenuId = menuId;
+  const activeMenuId = menu_id;
   // store.dispatch(editText(activeMenuId, false));  
   const showComponent = state.editing.showComponent;
   console.log(`showComponent ? ${showComponent}`);

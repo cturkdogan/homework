@@ -6,7 +6,7 @@ import { setActiveMenuId } from '../actions';
 
 const Menu = ({ menu }) => {
 
-    const { label, menuId } = menu;
+    const { label, menu_id } = menu;
     
     return (
         <div className="just-padding">
@@ -19,9 +19,9 @@ const Menu = ({ menu }) => {
         </div>
     );
 
-    function handleMenuClick({ menuId }) {
-        console.log(`menuId ${menuId}`);
-        store.dispatch(setActiveMenuId(menuId))
+    function handleMenuClick({ menu_id }) {
+        console.log(`menu_id ${menu_id}`);
+        store.dispatch(setActiveMenuId(menu_id))
     }
 };
 

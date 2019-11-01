@@ -108,7 +108,7 @@ import { setActiveMenuId } from '../actions';
 &nbsp;
 const Menu = <span class="fstat-no" title="function not covered" >({</span> menu }) =&gt; {
 &nbsp;
-    const { label, menuId } = <span class="cstat-no" title="statement not covered" >menu;</span>
+    const { label, menu_id } = <span class="cstat-no" title="statement not covered" >menu;</span>
     
 <span class="cstat-no" title="statement not covered" >    return (</span>
         &lt;div className="just-padding"&gt;
@@ -121,9 +121,9 @@ const Menu = <span class="fstat-no" title="function not covered" >({</span> menu
         &lt;/div&gt;
     );
 &nbsp;
-    function <span class="fstat-no" title="function not covered" >handleMenuClick(</span>{ menuId }) {
-<span class="cstat-no" title="statement not covered" >        console.log(`menuId ${menuId}`);</span>
-<span class="cstat-no" title="statement not covered" >        store.dispatch(setActiveMenuId(menuId))</span>
+    function <span class="fstat-no" title="function not covered" >handleMenuClick(</span>{ menu_id }) {
+<span class="cstat-no" title="statement not covered" >        console.log(`menu_id ${menu_id}`);</span>
+<span class="cstat-no" title="statement not covered" >        store.dispatch(setActiveMenuId(menu_id))</span>
     }
 };
 &nbsp;

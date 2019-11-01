@@ -4,14 +4,14 @@ const faker = require("faker"); // faker is used for generating random fake data
 const _ = require("lodash"); // lodash is a utility lib for Javascript
 
 // const menus = generateMenus();
-// export const items = _.mapKeys(menus, "menuId");
+// export const items = _.mapKeys(menus, "menu_id");
 
 
 const menus = generateMenus();
 export const items = menus.slice(0);
 items.sort(function (a,b){
-  let x = a.menuId;
-  let y = b.menuId;
+  let x = a.menu_id;
+  let y = b.menu_id;
   return x < y ? -1 : x > y ? 1 : 0;;
 });
 
@@ -19,7 +19,7 @@ items.sort(function (a,b){
 export const getMessages = messagesPerMenu => {
   let messages = {};
   _.forEach(menus, menu => {
-    messages[menu.menuId] = {
+    messages[menu.menu_id] = {
       ..._.mapKeys(generateMsgs(messagesPerMenu), "number")
     };
   });
@@ -44,7 +44,7 @@ export const state = {
   let subMenu = ["Menu 1.1", "Menu 1.2", "Menu 2.1"];
   
   return {
-    menuId: shortid.generate(),
+    menu_id: shortid.generate(),
     title: title,
     parentId: null,
 	  isActive: true,
@@ -57,16 +57,17 @@ export const state = {
 
   export function generateMenu(){
     let menu = {
-      menuId: "1",
+      menu_id: "1",
       label: "Menu 1",      
-      value: "1",
+      value: "Secure data sharing and collaboration among partners => Blockchain corruption cyber attack Decarbonization => emission reduction goals, carbon neutral fuels, optimized logistic chains Safe seafare => Shipping 4.0  autonomous shipping, human error New business models: blockchain => verticals feeding on shipping data",
       title: "Marine Industry Problems",
-      text: "Secure data sharing and collaboration among partners => Blockchain corruption cyber attack Decarbonization => emission reduction goals, carbon neutral fuels, optimized logistic chains Safe seafare => Shipping 4.0  autonomous shipping, human error New business models: blockchain => verticals feeding on shipping data",
       parent_id: null,
       children: [{
+        menu_id: "1.1",
         label: "Menu 1.1",      
         value: "1.1",        
-        title: txtgen.sentence()
+        title: txtgen.sentence(),
+        parent_id: "1"
       },]
     }
     return menu;
@@ -74,30 +75,32 @@ export const state = {
 
   export function generateMenus(){
     let menu = [{
-      menuId: "1",
+      menu_id: "1",
       label: "Menu 1",      
       value: "Secure data sharing and collaboration among partners => Blockchain corruption cyber attack Decarbonization => emission reduction goals, carbon neutral fuels, optimized logistic chains Safe seafare => Shipping 4.0  autonomous shipping, human error New business models: blockchain => verticals feeding on shipping data",
-      title: "Marine Industry Problems",
-      text: "",
+      title: "Marine Industry Problems", 
       parent_id: null,
       children: [{
+        menu_id: "1.1",
         label: "Menu 1.1",      
         value: txtgen.sentence(),
-        title: txtgen.sentence()
+        title: txtgen.sentence(),
+        parent_id: "1"
         
       },]
     },
     {
-      menuId: "2",
+      menu_id: "2",
       label: "Menu 2",    
       value: "Sensors Autonomous vehicles and equipment Drones 3D printing IOT and Cloud Augmented Reality, VR, Digital twin ‘Learn (AR and VR), Train (VR), Perform (AR) Digital simulation",
-      title: "Industry 4.0 notes",
-      text: txtgen.sentence(),
+      title: "Industry 4.0 notes", 
       parent_id: null,
       children: [{
+        menu_id: "2.1",
         label: "Menu 2.1",      
         value: txtgen.sentence(),        
-        title: txtgen.sentence()
+        title: txtgen.sentence(),
+        parent_id: "2"
       },]
     }    
   ];

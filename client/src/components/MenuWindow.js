@@ -12,9 +12,9 @@ const MenuWindow = () => {
     if (state.activeMenuId === "undefined") {
         const menu = state.items[0]; // get first menu from the items list
         console.log({ menu });
-        store.dispatch(setActiveMenuId(menu.menuId)); // set the displayed menu id as the activeMenuId   
+        store.dispatch(setActiveMenuId(menu.menu_id)); // set the displayed menu id as the activeMenuId   
     }
-    const activeMenu = state.items.find(item => item.menuId === state.activeMenuId)  
+    const activeMenu = state.items.find(item => item.menu_id === state.activeMenuId)  
     console.log(`Active Menu Id: ${state.activeMenuId}`);
     console.log(`Active Menu: ${activeMenu}`)
     

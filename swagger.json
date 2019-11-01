@@ -1,0 +1,98 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "HRCS HW Application API",
+      "description": "Application API for creating Menus",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:8080",
+    "basePath": "/api",
+    "tags": [
+      {
+        "name": "Menu",
+        "description": "API for menus in the system"
+      }
+    ],
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/menu":{
+        "post":{
+          "tags": [
+            "Menus"
+          ],
+          "description": "create a menu",
+          "parameters": [
+            {
+              "menu=id": "menu",
+              "label": "",
+              "title": "",
+              "value": "",
+              "parent_id": "",
+              "in": "body",
+              "description": "menu that we create",
+              "schema": {
+                "$ref": "#/definitions/Menu"
+              }
+            }
+          ],
+          "produces":[
+            "application/json"
+          ],
+          "responses":{
+            "200":{
+              "description":"menu is created",
+              "schema":{
+                "$ref":"#/definitions/Menu"
+              }
+            }
+          }
+        },
+        "/menu":{
+          "get":{
+            "tags": [
+              "Menus"
+            ],
+            "description": "get menus",
+            "summary": "Get all menus in system",
+            "responses":{
+              "200":{
+                "description":"menu is created",
+                "schema":{
+                  "$ref":"#/definitions/Menu"
+                }
+              }
+            }
+          }
+      }
+    },
+    "definitions": {
+        "Menu": {
+          "required": [
+            "menu_id"       
+          ],
+          "properties": {
+            "menu_id": {
+              "type": "string",
+              "uniqueItems": true
+            }      
+          }
+        },
+        "Menus": {
+          "type": "array",
+          "$ref": "#/definitions/Menu"
+        }
+     }
+   }
+  }

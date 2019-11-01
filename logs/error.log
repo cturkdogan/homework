@@ -1,0 +1,113 @@
+Debugger listening on ws://127.0.0.1:9229/414555ff-76d5-4e57-bfcc-243db49833dc
+For help, see: https://nodejs.org/en/docs/inspector
+internal/modules/cjs/loader.js:584
+    throw err;
+    ^
+
+Error: Cannot find module './swagger.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\workspace\jrcshw\server.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+Debugger listening on ws://127.0.0.1:9229/f87493cd-8f97-47ad-9782-b9ea166c1ce1
+For help, see: https://nodejs.org/en/docs/inspector
+internal/modules/cjs/loader.js:723
+    throw err;
+    ^
+
+SyntaxError: C:\workspace\jrcshw\swagger.json: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at Object.Module._extensions..json (internal/modules/cjs/loader.js:720:27)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\workspace\jrcshw\server.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+Debugger listening on ws://127.0.0.1:9229/ae06be19-27f2-4938-b7aa-63575587215d
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/eb91a1ce-b466-4e31-a420-9de3a5689e55
+For help, see: https://nodejs.org/en/docs/inspector
+C:\workspace\jrcshw\server.js:27
+logger.token('timestamp', function() {return new Date.now();});
+                                             ^
+
+TypeError: Date.now is not a constructor
+    at Function.timestamp (C:\workspace\jrcshw\server.js:27:46)
+    at eval (eval at compile (C:\workspace\jrcshw\node_modules\morgan\index.js:391:10), <anonymous>:5:25)
+    at Array.logRequest (C:\workspace\jrcshw\node_modules\morgan\index.js:122:18)
+    at listener (C:\workspace\jrcshw\node_modules\on-finished\index.js:169:15)
+    at onFinish (C:\workspace\jrcshw\node_modules\on-finished\index.js:100:5)
+    at callback (C:\workspace\jrcshw\node_modules\ee-first\index.js:55:10)
+    at ServerResponse.onevent (C:\workspace\jrcshw\node_modules\ee-first\index.js:93:5)
+    at ServerResponse.emit (events.js:194:15)
+    at onFinish (_http_outgoing.js:671:10)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+Debugger listening on ws://127.0.0.1:9229/092f5d8f-94af-4a15-8b3b-42093d6e34a3
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/65ab1c84-a47d-4334-b53d-1276687daceb
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/bdb4d5c1-1ed6-4272-b379-de64bd5bacfb
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/9bd5a734-e4ee-4f37-93df-1675b0dd0a3e
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/656ae7ec-6944-456b-a5ab-bc0c9e72ae08
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/c97e4a0a-b28f-4f51-82e3-cc5e522ca902
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/26b0d919-708b-4a36-bc78-a97e99f5f692
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/450ad527-df00-46bf-8a22-c5bc5d2224ee
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/f5127ba6-7470-4673-966c-d1381b8d6cbb
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/07ea1b2a-5231-4334-b81b-91a0c810fd92
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/e9bd7eb4-8f08-4f9d-a2ec-71931b9f92eb
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/b587efcd-dc31-4f1b-add7-e17fe7661b6b
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/3d789354-644a-46f7-94a0-960a2036d1a6
+For help, see: https://nodejs.org/en/docs/inspector
+internal/modules/cjs/loader.js:723
+    throw err;
+    ^
+
+SyntaxError: C:\workspace\jrcshw\swagger.json: Unexpected token , in JSON at position 507
+    at JSON.parse (<anonymous>)
+    at Object.Module._extensions..json (internal/modules/cjs/loader.js:720:27)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\workspace\jrcshw\server.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+Debugger listening on ws://127.0.0.1:9229/140eea1e-956b-4cc6-8c73-9271914a6a02
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/23095f41-b9fb-4418-a275-4b2738cee856
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/423616ae-06ca-4e16-9180-b21e666c1476
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/c03ca08c-e56b-4355-bee1-69ce3db6f324
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/ced3810a-98d0-4f1b-9259-45dcf1da92f1
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/cc838483-2993-4796-9fb0-ace631b43e88
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/9fdb38d8-c266-468c-af1b-10ca8da1574f
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/4df14c68-24e3-4854-baf1-9c5df3f0de05
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/2e7e4f46-3541-4518-b9f4-11357e96c018
+For help, see: https://nodejs.org/en/docs/inspector
+^C

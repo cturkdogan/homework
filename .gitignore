@@ -1,2 +1,5 @@
 node_modules
 files
+client/node_modules
+client/build
+build

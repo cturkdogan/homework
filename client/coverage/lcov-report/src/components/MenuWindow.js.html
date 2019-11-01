@@ -118,9 +118,9 @@ const MenuWindow = <span class="fstat-no" title="function not covered" >()</span
 <span class="cstat-no" title="statement not covered" >    if (state.activeMenuId === "undefined") {</span>
         const menu = <span class="cstat-no" title="statement not covered" >state.items[0];</span> // get first menu from the items list
 <span class="cstat-no" title="statement not covered" >        console.log({ menu });</span>
-<span class="cstat-no" title="statement not covered" >        store.dispatch(setActiveMenuId(menu.menuId)); </span>// set the displayed menu id as the activeMenuId   
+<span class="cstat-no" title="statement not covered" >        store.dispatch(setActiveMenuId(menu.menu_id)); </span>// set the displayed menu id as the activeMenuId   
     }
-    const activeMenu = <span class="cstat-no" title="statement not covered" >state.items.find(<span class="fstat-no" title="function not covered" >it</span>em =&gt; <span class="cstat-no" title="statement not covered" >item.menuId === state.activeMenuId)  </span></span>
+    const activeMenu = <span class="cstat-no" title="statement not covered" >state.items.find(<span class="fstat-no" title="function not covered" >it</span>em =&gt; <span class="cstat-no" title="statement not covered" >item.menu_id === state.activeMenuId)  </span></span>
 <span class="cstat-no" title="statement not covered" >    console.log(`Active Menu Id: ${state.activeMenuId}`);</span>
 <span class="cstat-no" title="statement not covered" >    console.log(`Active Menu: ${activeMenu}`)</span>
     

@@ -11,24 +11,22 @@ const Main = ({ menu, activeMenuId }) => {
     const renderMainContent = () => {
         if (!activeMenuId) {
             return (
-            <Row>    
-            <Empty menu={menu} activeMenuId={activeMenuId} />
-            
-            </Row>
+                <Row>
+                    <Empty menu={menu} activeMenuId={activeMenuId} />
+                </Row>
             );
         } else {
             return (
                 <Row>
-                <MenuWindow activeMenuId={activeMenuId} />
-                
-                </Row>                  
+                    <MenuWindow activeMenuId={activeMenuId} />
+                </Row>
             );
         }
     }
-    return (        
-            <Col id='main' sm={{ span: 9 }} md={{ span: 10 }} lg={{ span: 10 }} pt={3}>
-                {renderMainContent()}
-            </Col>      
+    return (
+        <Col id='main' sm={{ span: 9 }} md={{ span: 10 }} lg={{ span: 10 }} pt={3}>
+            {renderMainContent()}
+        </Col>
     );
 };
 

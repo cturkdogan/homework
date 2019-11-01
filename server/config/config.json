@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "hwdb",
+    "host": "localhost",
+	"port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "hwtestdb",
+    "host": "localhost",
+	"port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "rdvgmbjxvsltxi",
+    "password": "8319173b805ca0fb9152410f841b6b6eca7b365cc1b1bf3ad9acb07fedd7a7d1",
+    "database": "d6qfiu4r6ra578",
+    "host": "ec2-54-221-212-126.compute-1.amazonaws.com",
+	"port": 5432,
+    "dialect": "postgres"
+  }
+}

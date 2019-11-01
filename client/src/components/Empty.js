@@ -11,7 +11,7 @@ const Empty = () => {
     const {items} = store.getState(); // get menu list
     const menu = items[0]; // get first menu from the list
     console.log({ menu });
-    const activeMenuId = menu.menuId;
+    const activeMenuId = menu.menu_id;
     console.log(`Active Menu Id: ${activeMenuId}`);
   //  store.dispatch(setActiveMenuId(activeMenuId)); // set the displayed menu id as the activeMenuId    
     

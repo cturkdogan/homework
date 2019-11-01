@@ -7,9 +7,9 @@ import EdiText from 'react-editext';
 
 function Title({ menu }) {
   const state = store.getState();  
-  const { title, menuId } = menu;
+  const { title, menu_id } = menu;
   console.log(`Menu: ${menu}`);
-  const activeMenuId = menuId;
+  const activeMenuId = menu_id;
 
   const handleSubmit = (activeMenuId, val) => {
     store.dispatch(submitText(activeMenuId, val));

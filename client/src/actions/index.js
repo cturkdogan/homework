@@ -2,9 +2,9 @@ import {SET_ACTIVE_MENU_ID} from '../constants/action-types';
 import {EDIT_TITLE} from '../constants/action-types';
 import {EDIT_TEXT} from '../constants/action-types';
 
-export const setActiveMenuId = menuId => ({
+export const setActiveMenuId = menu_id => ({
     type: SET_ACTIVE_MENU_ID,
-    payload: menuId
+    payload: menu_id
 });
 
 export const editTitle = (activeMenuId, showComponent) => ({
