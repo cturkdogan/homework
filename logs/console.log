@@ -3,155 +3,787 @@
 [33m[nodemon] watching dir(s): *.*[39m
 [33m[nodemon] watching extensions: js,mjs,json[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:12:08 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 200 3104 - 11.652
-[Fri Nov 01 2019 12:12:08 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1625 - 0.682
-[Fri Nov 01 2019 12:12:08 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 200 307021 - 14.101
-[Fri Nov 01 2019 12:12:08 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 200 973897 - 13.120
-[Fri Nov 01 2019 12:12:08 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 200 141808 - 59.405
-[Fri Nov 01 2019 12:12:09 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/favicon-32x32.png 200 628 - 2.425
-[Fri Nov 01 2019 12:20:57 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 400 307 - 477.073
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 11:10:44 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 516.057
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
 Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
-[Fri Nov 01 2019 12:21:38 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 1693 - 517.023
-Executing (default): INSERT INTO "Menus" ("id","menu_id","label","title","value","parent_id","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6,$7) RETURNING *;
-[Fri Nov 01 2019 12:24:59 GMT+0900 (Japan Standard Time)] POST localhost /api/menu 400 8672 - 174.780
-Executing (default): INSERT INTO "Menus" ("id","menu_id","label","title","value","parent_id","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6,$7) RETURNING *;
-[Fri Nov 01 2019 12:25:20 GMT+0900 (Japan Standard Time)] POST localhost /api/menu 201 2498 - 96.005
-Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
-[Fri Nov 01 2019 12:25:40 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 71.718
-[Fri Nov 01 2019 12:26:21 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 200 3104 - 4.954
-[Fri Nov 01 2019 12:26:21 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1625 - 0.391
-[Fri Nov 01 2019 12:26:21 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 200 141808 - 10.169
-[Fri Nov 01 2019 12:26:21 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 200 973897 - 18.138
-[Fri Nov 01 2019 12:26:21 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 200 307021 - 33.622
+[Sat Nov 02 2019 11:13:33 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 504.130
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:28:17 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 9.341
-[Fri Nov 01 2019 12:28:17 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 6.206
-[Fri Nov 01 2019 12:28:17 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 7.593
-[Fri Nov 01 2019 12:28:17 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1584 - 1.281
-[Fri Nov 01 2019 12:28:17 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 5.037
-[Fri Nov 01 2019 12:28:18 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/favicon-32x32.png 200 628 - 7.575
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:29:10 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 10.071
-[Fri Nov 01 2019 12:29:10 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 6.487
-[Fri Nov 01 2019 12:29:10 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1634 - 1.243
-[Fri Nov 01 2019 12:29:10 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 4.677
-[Fri Nov 01 2019 12:29:10 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 4.907
-[Fri Nov 01 2019 12:29:11 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/favicon-32x32.png 304 - - 0.842
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:29:45 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 8.888
-[Fri Nov 01 2019 12:29:45 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 4.492
-[Fri Nov 01 2019 12:29:45 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1610 - 1.261
-[Fri Nov 01 2019 12:29:45 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 6.274
-[Fri Nov 01 2019 12:29:45 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 6.463
-[Fri Nov 01 2019 12:29:46 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/favicon-32x32.png 200 628 - 6.423
-[Fri Nov 01 2019 12:29:51 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 1.296
-[Fri Nov 01 2019 12:29:51 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 2.185
-[Fri Nov 01 2019 12:29:51 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 0.725
-[Fri Nov 01 2019 12:29:51 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 304 - - 0.384
-[Fri Nov 01 2019 12:29:51 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 1.592
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:30:41 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 7.066
-[Fri Nov 01 2019 12:30:41 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 3.295
-[Fri Nov 01 2019 12:30:41 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 4.649
-[Fri Nov 01 2019 12:30:41 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 2.005
-[Fri Nov 01 2019 12:30:41 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1625 - 1.189
-[Fri Nov 01 2019 12:30:42 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/favicon-32x32.png 200 628 - 3.949
-[Fri Nov 01 2019 12:30:49 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 1.212
-[Fri Nov 01 2019 12:30:49 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 1.030
-[Fri Nov 01 2019 12:30:49 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 1.512
-[Fri Nov 01 2019 12:30:49 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 304 - - 0.350
-[Fri Nov 01 2019 12:30:49 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 2.023
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:31:40 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 7.010
-[Fri Nov 01 2019 12:31:40 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 5.953
-[Fri Nov 01 2019 12:31:40 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1634 - 1.452
-[Fri Nov 01 2019 12:31:40 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 5.599
-[Fri Nov 01 2019 12:31:40 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 5.819
-[Fri Nov 01 2019 12:31:49 GMT+0900 (Japan Standard Time)] GET localhost /api/v1/menu 404 150 - 2.671
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:32:21 GMT+0900 (Japan Standard Time)] GET localhost /api/v1/menu 404 150 - 4.318
-[Fri Nov 01 2019 12:32:31 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 9.316
-[Fri Nov 01 2019 12:32:31 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 6.167
-[Fri Nov 01 2019 12:32:31 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1631 - 1.885
-[Fri Nov 01 2019 12:32:31 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 5.126
-[Fri Nov 01 2019 12:32:31 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 1.541
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:32:46 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 8.703
-[Fri Nov 01 2019 12:32:46 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 6.488
-[Fri Nov 01 2019 12:32:46 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 7.356
-[Fri Nov 01 2019 12:32:46 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 2.132
-[Fri Nov 01 2019 12:32:46 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1631 - 1.368
-[Fri Nov 01 2019 12:32:46 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/favicon-32x32.png 200 628 - 4.728
-Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
-[Fri Nov 01 2019 12:32:54 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 217.551
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
 Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
-[Fri Nov 01 2019 12:33:48 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 224.612
-[Fri Nov 01 2019 12:33:59 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 3.855
-[Fri Nov 01 2019 12:33:59 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 5.041
-[Fri Nov 01 2019 12:33:59 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 6.851
-[Fri Nov 01 2019 12:33:59 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 1.252
-[Fri Nov 01 2019 12:33:59 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 1668 - 0.623
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[Sat Nov 02 2019 11:31:02 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 765.392
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:38:57 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 7.322
-[Fri Nov 01 2019 12:38:57 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 6.111
-[Fri Nov 01 2019 12:38:57 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 3162 - 1.237
-[Fri Nov 01 2019 12:38:57 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 4.582
-[Fri Nov 01 2019 12:38:57 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 4.855
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
 [32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:40:23 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 11.240
-[Fri Nov 01 2019 12:40:23 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 4.739
-[Fri Nov 01 2019 12:40:23 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 5.650
-[Fri Nov 01 2019 12:40:23 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 3158 - 1.206
-[Fri Nov 01 2019 12:40:23 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 9.135
-[Fri Nov 01 2019 12:40:23 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/favicon-32x32.png 200 628 - 3.609
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 11:35:20 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 460.257
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-[Fri Nov 01 2019 12:43:43 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/ 304 - - 7.813
-[Fri Nov 01 2019 12:43:43 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui.css 304 - - 6.100
-[Fri Nov 01 2019 12:43:43 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-bundle.js 304 - - 3.793
-[Fri Nov 01 2019 12:43:43 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-init.js 200 3267 - 1.220
-[Fri Nov 01 2019 12:43:43 GMT+0900 (Japan Standard Time)] GET localhost /api-docs/swagger-ui-standalone-preset.js 304 - - 3.695
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
-Terminate batch job (Y/N)? 
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 11:42:21 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 514.657
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 11:44:21 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 523.326
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 11:45:23 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 506.810
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 11:55:01 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 504.447
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 11:57:50 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 377.234
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:04:57 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 1147.708
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:06:06 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 699.894
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:12:55 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 1463.323
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:14:40 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 468.393
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:17:40 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 527.352
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:23:32 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 623.883
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:29:15 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 760.729
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:58:15 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 497.331
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 12:59:56 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 585.701
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:03:04 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 473.503
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:05:55 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 496.513
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:07:29 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 504.245
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:12:24 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 461.774
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:17:34 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 328.909
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:18:25 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 104.262
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:18:47 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 153.237
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:21:24 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 519.160
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:22:19 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 535.718
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:23:20 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 445.078
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:24:07 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 792.341
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:24:57 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 968.001
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:29:34 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 495.174
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:33:51 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 546.896
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:35:54 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 438.930
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:36:26 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 157.261
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:38:59 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 944.481
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:40:12 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 1096.840
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:40:25 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 110.390
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:42:26 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 110.383
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:48:08 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 485.483
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:50:26 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 639.991
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:50:53 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 103.781
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 13:51:51 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 93.199
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:19:16 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 494.991
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:19:55 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 165.506
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:27:13 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 485.669
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:28:24 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 179.111
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:31:14 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 619.545
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:33:48 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 408.392
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:33:58 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 9.920
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:33:59 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 5.257
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:36:34 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 357.485
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:39:20 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 686.282
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:40:07 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 251.957
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:40:38 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 567.473
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:44:08 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 482.622
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:44:53 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 198.013
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:45:04 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 89.158
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:45:33 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 515.708
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:45:53 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 104.169
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:46:38 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 93.672
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:46:49 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 103.867
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:47:19 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 235.764
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:47:51 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 366.287
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:50:28 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 422.286
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:51:00 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 226.852
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:53:53 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 367.684
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:54:08 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 376.150
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:55:04 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 373.483
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:55:37 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 337.250
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:55:51 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 190.079
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:56:33 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 258.454
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+[Sat Nov 02 2019 14:57:11 GMT+0900 (Japan Standard Time)] GET localhost /api/menu - - - -
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:57:34 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 429.702
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:57:58 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 611.527
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:59:18 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 426.777
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 14:59:37 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 378.167
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 15:00:02 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 288.009
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 15:00:35 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 128.447
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 15:01:03 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 298.947
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 15:03:00 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 308.021
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 15:03:37 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 459.049
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m

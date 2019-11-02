@@ -35,11 +35,39 @@
           "description": "create a menu",
           "parameters": [
             {
-              "menu=id": "menu",
-              "label": "",
-              "title": "",
-              "value": "",
-              "parent_id": "",
+              "menu_id": "menu",              
+              "in": "body",
+              "description": "menu that we create",
+              "schema": {
+                "$ref": "#/definitions/Menu"
+              }
+            },
+            {
+                "label": "",                
+                "in": "body",
+                "description": "menu that we create",
+                "schema": {
+                  "$ref": "#/definitions/Menu"
+                }
+            },
+            {
+              "title": "",                
+              "in": "body",
+              "description": "menu that we create",
+              "schema": {
+                "$ref": "#/definitions/Menu"
+              }
+            },
+            {
+              "value": "",                
+              "in": "body",
+              "description": "menu that we create",
+              "schema": {
+                "$ref": "#/definitions/Menu"
+              }
+            },
+            {
+              "parent_id": "",                
               "in": "body",
               "description": "menu that we create",
               "schema": {
@@ -58,8 +86,7 @@
               }
             }
           }
-        },
-        "/menu":{
+        },      
           "get":{
             "tags": [
               "Menus"
@@ -75,7 +102,7 @@
               }
             }
           }
-      }
+     
     },
     "definitions": {
         "Menu": {

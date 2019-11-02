@@ -1,6 +1,12 @@
-import {SET_ACTIVE_MENU_ID} from '../constants/action-types';
-import {EDIT_TITLE} from '../constants/action-types';
-import {EDIT_TEXT} from '../constants/action-types';
+import { SET_ACTIVE_MENU_ID, EDIT_TITLE, EDIT_TEXT, FETCH_MENUS_SUCCESS, } from '../constants/action-types';
+
+
+export function fetchMenusSuccess(menus) {
+    return {
+        type: FETCH_MENUS_SUCCESS,
+        payload: {menus}
+    }
+}
 
 export const setActiveMenuId = menu_id => ({
     type: SET_ACTIVE_MENU_ID,
