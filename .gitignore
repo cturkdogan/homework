@@ -3,3 +3,4 @@ files
 client/node_modules
 client/build
 build
+logs

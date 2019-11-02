@@ -787,3 +787,5 @@ Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_
 [Sat Nov 02 2019 15:03:37 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 459.049
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node --inspect ./server.js ./server.js`[39m
+Executing (default): SELECT "id", "menu_id", "label", "title", "value", "parent_id", "createdAt", "updatedAt" FROM "Menus" AS "Menu" LIMIT 10000;
+[Sat Nov 02 2019 15:03:52 GMT+0900 (Japan Standard Time)] GET localhost /api/menu 201 4192 - 234.210
