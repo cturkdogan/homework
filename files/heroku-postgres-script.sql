@@ -1,41 +1,28 @@
 begin;
     set
     transaction read write;
-alter database d89ggubjdpnksb set default_transaction_read_only = off;
+alter database d2gcg34udiqvgh set default_transaction_read_only = off;
 commit;
 
---> DROP TABLE public."Menus";
-CREATE SEQUENCE "Menus_id_seq"
-START 1;
+
+CREATE SEQUENCE "Menus_id_seq" START 1;
+
 CREATE TABLE public."Menus"
 (
-    "id" bigint NOT NULL DEFAULT nextval('"Menus_id_seq"'
-    ::regclass),
-    "menu_id" character varying
-    (255) COLLATE pg_catalog."default" NOT NULL,    
-    "label" character varying
-    (255) COLLATE pg_catalog."default" NOT NULL,
-    "title" character varying
-    (255) COLLATE pg_catalog."default",
-    "parent_id" character varying
-    (255) COLLATE pg_catalog."default",    
-    "value" character varying
-    (1024) COLLATE pg_catalog."default",
-    "createdAt" timestamp
-    with time zone NOT NULL,
-    "updatedAt" timestamp
-    with time zone NOT NULL,
-    CONSTRAINT "Menus_pkey" PRIMARY KEY
-    (id)
-);
+    id integer NOT NULL DEFAULT nextval('"Menus_id_seq"'::regclass),
+    menu_id character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    label character varying(255) COLLATE pg_catalog."default",
+    title character varying(255) COLLATE pg_catalog."default",
+    value text COLLATE pg_catalog."default",
+    parent_id character varying(255) COLLATE pg_catalog."default",
+    "createdAt" timestamp with time zone NOT NULL,
+    "updatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "Menus_pkey" PRIMARY KEY (id),
+    CONSTRAINT "Menus_menu_id_key" UNIQUE (menu_id)
 
+)
     commit;
 
-    begin;
-        set
-        transaction read write;
-    alter database d89ggubjdpnksb set default_transaction_read_only = off;
-    commit;
     INSERT INTO public."Menus"
         (
         "id", "menu_id", "label", "title", "parent_id", "value", "createdAt", "updatedAt")
