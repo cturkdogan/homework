@@ -28,7 +28,7 @@ function Text({ menu }) {
       <EdiText
         className="Text"
         viewProps={{
-          className: 'Text',
+          className: 'textarea',
         }}
         inputProps={{
           className: 'textarea',
