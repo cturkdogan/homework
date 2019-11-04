@@ -45,5 +45,5 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "https://jrcshw.herokuapp.com"
 }
