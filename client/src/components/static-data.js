@@ -36,7 +36,7 @@ export function generateMenu(){
       menu_id: "1",
       label: "Static Menu 1",      
       value: "Secure data sharing and collaboration among partners => Blockchain corruption cyber attack Decarbonization => emission reduction goals, carbon neutral fuels, optimized logistic chains Safe seafare => Shipping 4.0  autonomous shipping, human error New business models: blockchain => verticals feeding on shipping data",
-      title: "Marine Industry Problems Static", 
+      title: "Marine Industry Problems", 
       parent_id: null,
       children: [{
         menu_id: "1.1",
@@ -62,17 +62,17 @@ export function generateMenu(){
       },]
     },
     {
-      menu_id: "2.1",
-      label: "Menu 2.1",    
+      menu_id: "3",
+      label: "Menu 3",    
       value: txtgen.sentence(),
       title: "Other Menu", 
-      parent_id: "2",
+      parent_id: null,
       children: [{
-        menu_id: "2.1.1",
-        label: "Menu 2.1.1",      
+        menu_id: "3.1",
+        label: "Menu 3.1",      
         value: txtgen.sentence(),        
         title: txtgen.sentence(),
-        parent_id: "2"
+        parent_id: "3"
       },]
     }    
   ];
