@@ -33,43 +33,54 @@
           "Menu"
         ],
         "description": "create a menu",
+        "requestBody": {
+          "description": "Menu Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/Menu"
+              }
+            }
+          }
+        },
         "parameters": [
           {
-            "menu_id": "menu",
+            "menu_id": "menu",              
             "in": "body",
-            "description": "menu id",
+            "description": "menu that we create",
             "schema": {
               "$ref": "#/definitions/Menu"
             }
           },
           {
-            "label": "",
+              "label": "",                
+              "in": "body",
+              "description": "menu that we create",
+              "schema": {
+                "$ref": "#/definitions/Menu"
+              }
+          },
+          {
+            "title": "",                
             "in": "body",
-            "description": "menu label",
+            "description": "menu that we create",
             "schema": {
               "$ref": "#/definitions/Menu"
             }
           },
           {
-            "title": "",
+            "value": "",                
             "in": "body",
-            "description": "menu title",
+            "description": "menu that we create",
             "schema": {
               "$ref": "#/definitions/Menu"
             }
           },
           {
-            "value": "",
+            "parent_id": "",                
             "in": "body",
-            "description": "menu content",
-            "schema": {
-              "$ref": "#/definitions/Menu"
-            }
-          },
-          {
-            "parent_id": "",
-            "in": "body",
-            "description": "menu parent id",
+            "description": "menu that we create",
             "schema": {
               "$ref": "#/definitions/Menu"
             }
@@ -80,10 +91,13 @@
         ],
         "responses": {
           "201": {
-            "description": "menu is created",
+            "description": "OK",
             "schema": {
-              "$ref": "#/definitions/Menu"
+              "$ref": "#/definitions/id"
             }
+          },
+          "400": {
+            "description": "Failed. Bad post data."
           }
         }
       },
@@ -95,41 +109,41 @@
         "summary": "Get all menus in system",
         "responses": {
           "201": {
-            "description": "menus are listed",            
+            "description": "menus are listed",
             "schema": {
               "$ref": "#/definitions/Menus"
             }
           }
         }
       }
-    },
-    "definitions": {
-      "Menu": {
-        "required": [
-          "menu_id"
-        ],
-        "properties": {
-          "menu_id": {
-            "type": "string",
-            "uniqueItems": true
-          },
-          "label": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "value": {
-            "type": "string"
-          },
-          "parent_id": {
-            "type": "string"
-          }
+    }
+  },
+  "definitions": {
+    "Menu": {
+      "type": "object",
+      "properties": {
+        "menu_id": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "label": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "parent_id": {
+          "type": "string"
         }
-      },
-      "Menus": {
-        "type": "array",
-        "items": {  "$ref": "#/definitions/Menu"}
+      }
+    },
+    "Menus": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Menu"
       }
     }
   }
