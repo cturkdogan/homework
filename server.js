@@ -36,7 +36,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Setup a default catch-all route that sends back a welcome message in JSON format.
 require('./server/routes')(app);
-/* app.get('/api', (req, res) => res.status(200).send({
-  message: 'Welcome to the JRCS HW API',
-})); */
+/* Swagger UI Express */
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));

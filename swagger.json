@@ -1,125 +1,136 @@
 {
-    "swagger": "2.0",
-    "info": {
-      "version": "1.0.0",
-      "title": "HRCS HW Application API",
-      "description": "Application API for creating Menus",
-      "license": {
-        "name": "MIT",
-        "url": "https://opensource.org/licenses/MIT"
-      }
-    },
-    "host": "localhost:8080",
-    "basePath": "/api",
-    "tags": [
-      {
-        "name": "Menu",
-        "description": "API for menus in the system"
-      }
-    ],
-    "schemes": [
-      "http"
-    ],
-    "consumes": [
-      "application/json"
-    ],
-    "produces": [
-      "application/json"
-    ],
-    "paths": {
-      "/menu":{
-        "post":{
-          "tags": [
-            "Menus"
-          ],
-          "description": "create a menu",
-          "parameters": [
-            {
-              "menu_id": "menu",              
-              "in": "body",
-              "description": "menu that we create",
-              "schema": {
-                "$ref": "#/definitions/Menu"
-              }
-            },
-            {
-                "label": "",                
-                "in": "body",
-                "description": "menu that we create",
-                "schema": {
-                  "$ref": "#/definitions/Menu"
-                }
-            },
-            {
-              "title": "",                
-              "in": "body",
-              "description": "menu that we create",
-              "schema": {
-                "$ref": "#/definitions/Menu"
-              }
-            },
-            {
-              "value": "",                
-              "in": "body",
-              "description": "menu that we create",
-              "schema": {
-                "$ref": "#/definitions/Menu"
-              }
-            },
-            {
-              "parent_id": "",                
-              "in": "body",
-              "description": "menu that we create",
-              "schema": {
-                "$ref": "#/definitions/Menu"
-              }
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "HRCS HW Application API",
+    "description": "Application API for creating Menus",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:8080",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "Menus",
+      "description": "API for menus in the system"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/menu": {
+      "post": {
+        "tags": [
+          "Menu"
+        ],
+        "description": "create a menu",
+        "parameters": [
+          {
+            "menu_id": "menu",
+            "in": "body",
+            "description": "menu id",
+            "schema": {
+              "$ref": "#/definitions/Menu"
             }
-          ],
-          "produces":[
-            "application/json"
-          ],
-          "responses":{
-            "200":{
-              "description":"menu is created",
-              "schema":{
-                "$ref":"#/definitions/Menu"
-              }
+          },
+          {
+            "label": "",
+            "in": "body",
+            "description": "menu label",
+            "schema": {
+              "$ref": "#/definitions/Menu"
+            }
+          },
+          {
+            "title": "",
+            "in": "body",
+            "description": "menu title",
+            "schema": {
+              "$ref": "#/definitions/Menu"
+            }
+          },
+          {
+            "value": "",
+            "in": "body",
+            "description": "menu content",
+            "schema": {
+              "$ref": "#/definitions/Menu"
+            }
+          },
+          {
+            "parent_id": "",
+            "in": "body",
+            "description": "menu parent id",
+            "schema": {
+              "$ref": "#/definitions/Menu"
             }
           }
-        },      
-          "get":{
-            "tags": [
-              "Menus"
-            ],
-            "description": "get menus",
-            "summary": "Get all menus in system",
-            "responses":{
-              "200":{
-                "description":"menu is created",
-                "schema":{
-                  "$ref":"#/definitions/Menu"
-                }
-              }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "menu is created",
+            "schema": {
+              "$ref": "#/definitions/Menu"
             }
           }
-     
+        }
+      },
+      "get": {
+        "tags": [
+          "Menus"
+        ],
+        "description": "get menus",
+        "summary": "Get all menus in system",
+        "responses": {
+          "201": {
+            "description": "menus are listed",            
+            "schema": {
+              "$ref": "#/definitions/Menus"
+            }
+          }
+        }
+      }
     },
     "definitions": {
-        "Menu": {
-          "required": [
-            "menu_id"       
-          ],
-          "properties": {
-            "menu_id": {
-              "type": "string",
-              "uniqueItems": true
-            }      
+      "Menu": {
+        "required": [
+          "menu_id"
+        ],
+        "properties": {
+          "menu_id": {
+            "type": "string",
+            "uniqueItems": true
+          },
+          "label": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "parent_id": {
+            "type": "string"
           }
-        },
-        "Menus": {
-          "type": "array",
-          "$ref": "#/definitions/Menu"
         }
-     }
-   }
+      },
+      "Menus": {
+        "type": "array",
+        "items": {  "$ref": "#/definitions/Menu"}
+      }
+    }
   }
+}
