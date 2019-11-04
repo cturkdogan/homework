@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server.js > logs/console.log 2> logs/error.log",
+    "start": "node ./server.js",
     "start-dev": "nodemon --inspect ./server.js ",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
